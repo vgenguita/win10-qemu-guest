@@ -9,12 +9,7 @@ DEVICEDISK=/dev/disk/by-id/ata-HARDDISK-EXAMPLE
 WINISO=${ISODIR}en_windows_10_consumer_editions_version_20h2_updated_nov_2020_x64_dvd_7727be28.iso
 #Virtio ISO. Get it from https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.208-1/
 VIRTIOISO=${ISODIR}virtio-win.iso
-# Passing the 'smb=/path/' option will start QEMU's Samba server on the
-# host that the guest can access.
-# Access with \\10.0.2.4\qemu on host. If it doesn't work check this
-# https://support.microsoft.com/en-us/help/4046019/guest-access-in-smb2-disabled-by-default-in-windows-10-and-windows-ser
-# To enable guest acces again run "gpedit.msc" from guest and check
-#       Computer Configuration\Administrative Templates\Network\Lanman Workstation -> "Enable insecure guest logons"
+#qemu' s guest samba shared
 SMBSHARED=/route/to/shared/FOLDER
 ##PCI device IDs.
 GPUVIDEOID=04:00.0
@@ -61,12 +56,12 @@ OPTS="$OPTS -drive file=${DEVICEDISK},cache=none,if=virtio,format=raw"
 
 ## DVD Settings. Enable during instalation and initial setup
 # Load our OS setup image e.g. ISO file.
-#OPTS="$OPTS -cdrom ${WINISO}"
+OPTS="$OPTS -cdrom ${WINISO}"
 # load virtio drivers
-#OPTS="$OPTS -drive file=${VIRTIOISO},index=3,media=cdrom"
+OPTS="$OPTS -drive file=${VIRTIOISO},index=3,media=cdrom"
 
 
-##GRAPHICS
+##GPU Settings
 #VIRTIO Device. Enable during instalation and initial setup, comment latter
 OPTS="$OPTS -vga virtio"
 OPTS="$OPTS -display sdl,gl=on"
