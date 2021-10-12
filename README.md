@@ -38,7 +38,9 @@ OPTS="$OPTS -nographic"
 ```	
 Check **Installation of Windows 10**  section  ->  [https://www.funtoo.org/Windows_10_Virtualization_with_KVM](https://www.funtoo.org/Windows_10_Virtualization_with_KVM) 
 
-Once windows is installed and configured, you would see video singal on monitor connected to guest' s GPU, now you can comment VIRTIO settings.
+Once windows is installed and configured, you would see video singal on monitor connected to guest' s GPU, now you can comment VIRTIO settings and use your own mouse and mice (Check **USB section** of [win10guest.sh](./win10guest.sh) ).
+
+If you want to share mouse and mice with your VM just maintain virtio graphics, the window will capture them.
 
 ```bash
  
