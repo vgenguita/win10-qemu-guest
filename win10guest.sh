@@ -1,7 +1,7 @@
 #!/bin/sh
 ISODIR=/route/to/ISODIR/
 #IMGDIR if you use disk file
-IMGIDR=/home/victor/dev/qemu/DISKS/
+IMGIDR=/route/to/image/DISKS/
 #DEVICEDISK if you use real host hard disk
 #Get your id with ls -lah /dev/disk/by-id/
 DEVICEDISK=/dev/disk/by-id/ata-HARDDISK-EXAMPLE
