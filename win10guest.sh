@@ -93,9 +93,6 @@ PORTREDIRECT=$PORTREDIRECT"hostfwd=tcp::5555-:3389,"
 # Another one example
 #PORTREDIRECT="$PORTREDIRECT\hostfwd=tcp::XXXX-:YYYY,"
 #OPTS="$OPTS -net nic -net user"
-#8080 Oracle HTTP Listener
-#2030 Oracle Services for Microsoft Transaction Server
-#1521 ORacle Database Listener
 OPTS="$OPTS -net nic -net user,${PORTREDIRECT}smb=${SMBSHARED}"
 
 ##Launc VM
