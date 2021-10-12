@@ -4,6 +4,11 @@ Get a functional qemu windows 10 guest with real gpu of host.
 This script is mainly based on https://github.com/cardi/qemu-windows-10 but updated and modified according with my needs.
 
 ## Requirements
+### Software
+- qemu
+- iommu, vfio packages (check your distro instrucctions)
+- Windows 10 ISO [Microsoft Web (you must need an license key)](https://www.microsoft.com/en-us/software-download/windows10ISO)
+- [Virtio drivers](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.208-1/) for Windows. Needed for installation process. 
 ### Hardware
 - A CPU with hardware virtualization support
 - A motherboard with IOMMU support
