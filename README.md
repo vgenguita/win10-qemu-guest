@@ -62,4 +62,4 @@ OPTS="$OPTS -nographic"
 Check **Accessing Files on your Linux** System section -> [https://www.funtoo.org/Windows_10_Virtualization_with_KVM](https://www.funtoo.org/Windows_10_Virtualization_with_KVM) 
 
 #LICENSE
-[LICENSE](CC0-1.0 / CC0-1.0 Universal)
+[CC0-1.0 / CC0-1.0 Universal](./LICENSE)
