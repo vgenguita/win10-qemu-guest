@@ -60,3 +60,6 @@ OPTS="$OPTS -nographic"
 ```	
 ### Samba server
 Check **Accessing Files on your Linux** System section -> [https://www.funtoo.org/Windows_10_Virtualization_with_KVM](https://www.funtoo.org/Windows_10_Virtualization_with_KVM) 
+
+#LICENSE
+
