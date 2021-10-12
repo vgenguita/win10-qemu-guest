@@ -20,7 +20,8 @@ done;
 3. Isolate GPU
 Check this to get detailed steps -> [https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF](https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF) 
 
-### Installing Windows 10
+## Installing Windows 10
+
 In **GPU Settings** of file.sh you must activate vitrio options
 ```bash
 
@@ -35,7 +36,7 @@ OPTS="$OPTS -vga none"
 # running from the shell
 OPTS="$OPTS -nographic"
 ```	
-Check Installation of Windows 10 here ->  [https://www.funtoo.org/Windows_10_Virtualization_with_KVM](https://www.funtoo.org/Windows_10_Virtualization_with_KVM) 
+Check **Installation of Windows 10**  section  ->  [https://www.funtoo.org/Windows_10_Virtualization_with_KVM](https://www.funtoo.org/Windows_10_Virtualization_with_KVM) 
 
 Once windows is installed and configured, you would see video singal on monitor connected to guest' s GPU, now you can comment VIRTIO settings.
 
@@ -52,3 +53,5 @@ OPTS="$OPTS -vga none"
 # running from the shell
 OPTS="$OPTS -nographic"
 ```	
+### Samba server
+Check **Accessing Files on your Linux** System section -> [https://www.funtoo.org/Windows_10_Virtualization_with_KVM](https://www.funtoo.org/Windows_10_Virtualization_with_KVM) 
