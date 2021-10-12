@@ -22,7 +22,7 @@ Check this to get detailed steps -> [https://wiki.archlinux.org/title/PCI_passth
 
 ## Installing Windows 10
 
-In **GPU Settings** of file.sh you must activate vitrio options
+In **GPU Settings** of win10guest.sh file you must activate vitrio options
 ```bash
 
 ##GPU Settings
