@@ -1,5 +1,8 @@
 # win10-qemu-guest
-Get a functional qemu windows 10 guest with real gpu of host
+Get a functional qemu windows 10 guest with real gpu of host.
+
+This script is mainly based on https://github.com/cardi/qemu-windows-10 but updated and modified according with my needs.
+
 ## Requirements
 ### Hardware
 - A CPU with hardware virtualization support
