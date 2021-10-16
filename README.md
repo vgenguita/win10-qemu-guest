@@ -2,7 +2,10 @@
 Get a functional qemu windows 10 guest with real gpu of host.
 
 This script is mainly based on https://github.com/cardi/qemu-windows-10 but updated and modified according with my needs.
-
+## Features
+- Use gpu's host directly on the VVM
+- Pass any USB device from host to VM 
+- Redirect ports from guest to host, for example RDP port for remote access.
 ## Requirements
 ### Software
 - qemu
