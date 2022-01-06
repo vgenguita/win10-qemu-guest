@@ -18,7 +18,7 @@ This script is mainly based on https://github.com/cardi/qemu-windows-10 but upda
 - At least, one free graphic card to pass it to guest.
 ### PCI Passtrhough
 1. Enable or check iommu on your host
-2. Check IOMMU groups
+2. Check IOMMU groups [iommu.sh](iommu.sh)
 ```bash
 #!/bin/bash
 for g in `find /sys/kernel/iommu_groups/* -maxdepth 0 -type d | sort -V`; do
